@@ -1,6 +1,6 @@
 #Intro
 
-This project is a Dockerfile that builds the [Gruyere project|https://google-gruyere.appspot.com/] into a container that can be run on your local machine without having to install it's dependencies. To run this, you'll need to have Docker installed.
+This project is a Dockerfile that builds the [Gruyere project](https://google-gruyere.appspot.com/) into a container that can be run on your local machine without having to install it's dependencies. To run this, you'll need to have Docker installed.
 
 #Usage
 You can pull this image from dockerhub using:
