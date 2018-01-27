@@ -17,9 +17,11 @@ RUN mkdir /gruyere &&\
 	unzip gruyere-code.zip &&\
 	rm gruyere-code.zip &&\
 	sed -i 's/insecure_mode = False/insecure_mode = True/'  /gruyere/gruyere.py &&\
+	sed -i "s/_Exit('bad_id')/#_Exit('bad_id')/"  /gruyere/gruyere.py &&\
 	sed -i 's/request_ip = self.client_address\[0\]/request_ip = "127.0.0.1"/' /gruyere/gruyere.py
 
 
 WORKDIR /gruyere
 EXPOSE 8008
+
 CMD ["python", "gruyere.py"]
